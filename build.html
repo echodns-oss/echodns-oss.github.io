@@ -1,0 +1,87 @@
+---
+layout: default
+title: Build Tool
+---
+
+<h1>🛠️ Build Tool</h1>
+<p>Select up to 8 Precepts. No duplicate Essences or Items allowed.</p>
+
+<div>
+  <label for="preceptSelect">Add Precept:</label>
+  <select id="preceptSelect"></select>
+  <button id="addBtn">Add</button>
+</div>
+
+<h2>Your Build</h2>
+<ul id="buildList"></ul>
+
+<textarea id="buildOutput" rows="8" cols="50" readonly></textarea><br>
+<button id="copyBtn">Copy to Clipboard</button>
+
+<script>
+// Load precepts directly from Jekyll's site data
+const precepts = [
+  {% for precept in site.precepts %}
+  {
+    title: "{{ precept.title | escape }}",
+    essence: "{{ precept.essence | escape }}",
+    item: "{{ precept.item | escape }}"
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+];
+
+const select = document.getElementById('preceptSelect');
+const buildList = document.getElementById('buildList');
+const buildOutput = document.getElementById('buildOutput');
+
+let build = [];
+
+function refreshOptions() {
+  select.innerHTML = "";
+  precepts.forEach(p => {
+    // filter: essence and item not already in build
+    if (!build.find(b => b.essence === p.essence || b.item === p.item)) {
+      const opt = document.createElement('option');
+      opt.value = p.title;
+      opt.textContent = `${p.title} (${p.essence} + ${p.item})`;
+      select.appendChild(opt);
+    }
+  });
+}
+
+function refreshBuild() {
+  buildList.innerHTML = "";
+  build.forEach((p, i) => {
+    const li = document.createElement('li');
+    li.textContent = `${p.title} [${p.essence} + ${p.item}]`;
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = "×";
+    removeBtn.onclick = () => {
+      build.splice(i, 1);
+      refreshBuild();
+      refreshOptions();
+    };
+    li.appendChild(removeBtn);
+    buildList.appendChild(li);
+  });
+
+  buildOutput.value = build.map(p => `${p.title} (${p.essence} + ${p.item})`).join("\\n");
+}
+
+document.getElementById('addBtn').onclick = () => {
+  const choice = select.value;
+  const precept = precepts.find(p => p.title === choice);
+  if (precept && build.length < 8) {
+    build.push(precept);
+    refreshBuild();
+    refreshOptions();
+  }
+};
+
+document.getElementById('copyBtn').onclick = () => {
+  buildOutput.select();
+  document.execCommand("copy");
+};
+
+refreshOptions();
+</script>
