@@ -1,5 +1,5 @@
 ---
-title: Darkdrift
+title: Poetry of Seiyl "Darkdrift"
 essence: Our Secret
 item: Sword
 layout: precept
