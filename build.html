@@ -34,8 +34,8 @@ const select = document.getElementById('preceptSelect');
 const buildList = document.getElementById('buildList');
 const buildOutput = document.getElementById('buildOutput');
 
-let build = [];
-
+let build = JSON.parse(localStorage.getItem("build") || "[]");
+  
 function refreshOptions() {
   select.innerHTML = "";
   precepts.forEach(p => {
@@ -63,6 +63,7 @@ function refreshBuild() {
     };
     li.appendChild(removeBtn);
     buildList.appendChild(li);
+    localStorage.setItem("build", JSON.stringify(build));
   });
 
   buildOutput.value = build.map(p => `${p.title} (${p.essence} + ${p.item})`).join("\\n");
