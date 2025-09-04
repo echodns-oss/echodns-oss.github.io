@@ -23,9 +23,9 @@ title: Build Tool
 const precepts = [
   {% for precept in site.precepts %}
   {
-    title: "{{ precept.title | escape }}",
-    essence: "{{ precept.essence | escape }}",
-    item: "{{ precept.item | escape }}"
+    title: "{{ precept.title | jsonify }}",
+    essence: "{{ precept.essence | jsonify }}",
+    item: "{{ precept.item | jsonify }}"
   }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ];
