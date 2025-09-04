@@ -1,0 +1,8 @@
+title: Precept Archive
+description: An archive of mystical Precepts
+theme: minima
+
+# Tell Jekyll that "_precepts" is a collection
+collections:
+  precepts:
+    output: true
