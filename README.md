@@ -1,7 +1,4 @@
 # Cordis Precept Archive
-
-A lightweight Jekyll site for hosting your Precepts on GitHub Pages.
-
 ## 📜 Adding Precepts
 
 1. Go to the `_precepts/` folder.
