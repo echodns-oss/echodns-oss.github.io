@@ -19,6 +19,16 @@ title: Build Tool
 <button id="copyBtn">Copy to Clipboard</button>
 
 <script>
+// Populate from local storage (lol)
+function loadBuild() {
+  build = JSON.parse(localStorage.getItem("build") || "[]");
+  refreshBuild();
+  refreshOptions();
+}
+
+// Run immediately when page loads
+loadBuild();
+  
 // Load precepts directly from Jekyll's site data
 const precepts = [
   {% for precept in site.precepts %}
