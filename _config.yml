@@ -1,8 +1,8 @@
-title: Precept Archive
-description: An archive of mystical Precepts
+title: Cordis - Precept Archive
+description: Arsenal of an Animistic panoply.
 theme: minima
 
-# Tell Jekyll that "_precepts" is a collection
+# "_precepts" is a collection.
 collections:
   precepts:
     output: true
