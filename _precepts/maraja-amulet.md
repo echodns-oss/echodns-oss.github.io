@@ -1,5 +1,5 @@
 ---
-title: Rod of Living Water
+title: Azure Periapt
 essence: Soothewater Crest
 item: Amulet
 layout: precept
