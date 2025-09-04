@@ -14,3 +14,36 @@ layout: default
   <a href="/essences#{{ page.essence | downcase }}">More with {{ page.essence }} Essence</a> | 
   <a href="/items#{{ page.item | downcase }}">More with {{ page.item }}</a>
 </p>
+
+<!-- Add to Build Button -->
+<button id="addToBuildBtn">➕ Add to Build</button>
+
+<script>
+document.getElementById("addToBuildBtn").onclick = function() {
+  const precept = {
+    title: "{{ page.title | escape }}",
+    essence: "{{ page.essence | escape }}",
+    item: "{{ page.item | escape }}"
+  };
+
+  // Retrieve current build from localStorage
+  let build = JSON.parse(localStorage.getItem("build") || "[]");
+
+  // Check duplicates (no repeated essence/item)
+  if (build.length >= 8) {
+    alert("You already have 8 Precepts in your build.");
+    return;
+  }
+  if (build.find(b => b.essence === precept.essence || b.item === precept.item)) {
+    alert("That essence or item is already used in your build.");
+    return;
+  }
+
+  // Add and save
+  build.push(precept);
+  localStorage.setItem("build", JSON.stringify(build));
+
+  // Redirect to build page
+  window.location.href = "/build";
+};
+</script>
