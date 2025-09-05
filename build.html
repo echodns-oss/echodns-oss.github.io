@@ -65,7 +65,7 @@ function refreshBuild() {
     localStorage.setItem("build", JSON.stringify(build));
   });
 
-  buildOutput.value = build.map(p => `${p.title} (${p.essence} + ${p.item})`).join("\\n");
+  buildOutput.value = build.map(p => `${p.title} (${p.essence} + ${p.item})`).join("\n");
 }
 
 document.getElementById('addBtn').onclick = () => {
