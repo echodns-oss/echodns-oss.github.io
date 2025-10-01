@@ -21,3 +21,8 @@ Or view all precepts directly:
 ## 🛠️ Build Tool
 Try assembling a set of up to 8 Precepts (no duplicate Essences or Items):  
 ➡️ [Open Build Tool](/build)
+
+---
+
+## Transformations
+➡️ [View Special Transformations](/anima)
