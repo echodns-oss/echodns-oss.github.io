@@ -20,10 +20,13 @@
 *An innate form of Soul Synthesis is not connected to any standard Precept and may have many levels or unique abilities to discover.*
 *Howeer, this Soul Synthesis requires the use of Kovash synt Kain's runeblade to activate.*
 
-**Level 0**
-- Restores the function of the lost limb.
-- Can be maintained indefinitely.
-- However, void corruption is passively stimulated while in use, increasing with intensity of use.
-
 **Level 1**
-- SYNTHETIC MASTERY. With this benefit, Soul Synthesis: Anima no longer prevents Soul Synthesis with other spirits. At the current level, this restores the function of your lost limb in other Soul Synthesis forms, which gain a minor void aspect when in use. At higher levels, it allows you to activate boons granted by Soul Synthesis: Anima in other Soul Synthesis forms. While maintaining multiple Soul Synthesis forms, the burden of severe void corruption is shared with your partner spirit. The benefits and downsides of this effect need not be described.
+- Awakens the blood, amplifying Kovash synt Kain's latent power at the cost of the user's lifeforce.
+- Strength, speed, and durability become amplified, and lesser wounds heal rapidly. Overuse causes fatigue.
+
+**Level 2**
+- Manifest a lesser totem umbra that greatly improves physical defense.
+- Physical attributes are further amplified, allowing execution of incredible feats.
+- The runeblade cannot be forcibly removed from the user's person unless they are rendered unconscious or killed.
+- The effect of lethal damage inflicted on the user is temporarily abeyed unless their heart is struck directly.
+- Many spiritual techniques are unusable, including Investiture, formation of Accords, and the Greater Second Sight.
