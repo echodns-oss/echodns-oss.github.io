@@ -1,2 +1,2 @@
-## Soul Synthesis: Anima
+## Soul Synthesis
 Pending
