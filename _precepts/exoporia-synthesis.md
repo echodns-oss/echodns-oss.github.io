@@ -1,5 +1,5 @@
 ---
-title: Soul Synthesis: Exoporia
+title: Soul Synthesis Exoporia
 essence: Exoporia
 item: Spirit Fruit
 layout: precept
