@@ -8,8 +8,10 @@ A spirit fruit can be consumed to convey Soul Synthesis 1 for approximately one 
 
 ## Soul Synthesis Abilities
 **Level 1**
+
 The spirit has no charisma. At this level, it bends completely to your will and its use confers low corruption.
-The wearer gains a moth-like aspect, including the following properties
+
+The wearer gains a moth-like aspect, including the following properties:
 - Perfect night vision.
 - Low altitude flight.
 - Shed scales to create kaleidoscopic field. Greatly empowers the effect of other illusion-based abilities, allowing them to project potent images into empty space; alone, it is only somewhat mystifying. Can also deflect or redirect light-based attacks.
