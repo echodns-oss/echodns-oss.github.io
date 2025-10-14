@@ -1,5 +1,5 @@
 ---
-title: "G", or Gravitational Constant
+title: G, or Gravitational Constant
 essence: Our Matter
 item: Amulet
 layout: precept
