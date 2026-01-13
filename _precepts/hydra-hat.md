@@ -1,5 +1,5 @@
 ---
-title: Alraune's Maledication
+title: Alraune's Malediction
 essence: Endurance
 item: Hat
 layout: precept
