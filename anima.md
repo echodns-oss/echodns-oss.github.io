@@ -30,3 +30,12 @@
 - The runeblade cannot be forcibly removed from the user's person unless they are rendered unconscious or killed.
 - The effect of lethal damage inflicted on the user is temporarily abeyed unless their heart is struck directly.
 - Many spiritual techniques are unusable, including Investiture, formation of Accords, and the Greater Second Sight.
+
+**Immaterial Augmentation**
+A form of Soul Synthesis with a heavily skewed immaterial aspect. This type of Soul Synthesis is available only to uniquely-bonded individuals.
+- Manifest a lesser form of true Totem Armor that confers some properties of Kovash synt Kain.
+- Allows ranged blood-aspect attacks effective at long distances.
+- Exhausts spiritual potency at a crippling rate, able to quickly deplete the user's full spiritual reserves.
+- Unlike standard Kovash forms, negative effects on physical health are limited only to the symptoms of spiritual depletion.
+- The full potential of this state can be harnessed only within the Mists, where it rivals the types of Soul Synthesis discovered thus far.
+- The state may be ineffective in certain metaphysical locations in which the Blood God is not present.
