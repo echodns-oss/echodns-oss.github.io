@@ -1,7 +1,7 @@
 ---
 title: 3.10
 essence: Our Matter
-item: Clothes
+item: Formalwear
 layout: precept
 ---
 
