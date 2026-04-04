@@ -1,0 +1,30 @@
+[
+  {
+    "id": "towers",
+    "label": "Deck of Towers",
+    "description": "Durable frontline classes that excel in guardianship and disruption.",
+    "color": "#7a3500",
+    "classes": ["paladin","avenger","warrior","towers"]
+  },
+  {
+    "id": "blades",
+    "label": "Deck of Blades",
+    "description": "Deadly combat classes that excel in skirmish encounters.",
+    "color": "#7a3500",
+    "classes": ["blademaster","scoundrel","marksman","blades"]
+  },
+  {
+    "id": "magi",
+    "label": "Deck of Magi",
+    "description": "Controllers that can unleash damage and powerful effects from afar.",
+    "color": "#7a3500",
+    "classes": ["arcanimist","transmuter","tactician","magi"]
+  },
+  {
+    "id": "glyphs",
+    "label": "Deck of Glyphs",
+    "description": "Helpful support classes that provide both healing and leadership.",
+    "color": "#7a3500",
+    "classes": ["mender","seer","occultist","glyphs"]
+  }
+]
