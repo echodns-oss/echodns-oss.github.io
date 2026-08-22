@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soliloquy — NPC Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <header id="top-bar">
+      <div class="brand">&#9876; Soliloquy <span class="brand-sub">NPC Browser</span></div>
+      <nav class="top-bar-nav">
+        <a class="top-bar-link" href="../class-browser/">Class Browser</a>
+        <a class="top-bar-link" href="../character-builder/">Character Builder</a>
+        <a class="top-bar-link active" href="#">NPC Browser</a>
+      </nav>
+      <input id="search" type="search" placeholder="Search NPCs &amp; abilities&hellip;" autocomplete="off">
+    </header>
+
+    <div id="layout">
+
+      <nav id="sidebar">
+        <div class="sidebar-label">Categories</div>
+        <button class="cat-btn active" data-cat="all">All NPCs</button>
+        <!-- Additional category buttons injected by browser.js -->
+      </nav>
+
+      <main id="main-content">
+        <div id="class-grid">
+          <p class="loading-msg">Loading&hellip;</p>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+  <script src="browser.js"></script>
+</body>
+</html>
